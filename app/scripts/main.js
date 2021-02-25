@@ -76,4 +76,12 @@
   }
 
   // Your custom JavaScript goes here
+  let counter = 1;
+  const baconImage = document.getElementById("bacon").cloneNode(true);
+  baconImage.id = `bacon${counter}`;
+  const moreBacon = document.getElementById("more-bacon");
+  moreBacon.addEventListener("click", ()=>{
+    overview.appendChild(baconImage)
+    counter++;
+  });
 })();

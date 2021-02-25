@@ -33,6 +33,7 @@ import swPrecache from 'sw-precache';
 import gulpLoadPlugins from 'gulp-load-plugins';
 import {output as pagespeed} from 'psi';
 import pkg from './package.json';
+var symlink = require('gulp-symlink');
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
